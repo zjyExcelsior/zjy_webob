@@ -1,0 +1,5 @@
+Paste==2.0.3
+PasteDeploy==1.5.2
+Routes==2.4.1
+WebOb==1.7.4
+pbr==3.1.1

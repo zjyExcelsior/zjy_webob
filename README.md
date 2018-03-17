@@ -1,2 +1,8 @@
 # zjy_webob
-基于Paste, PasteDeploy, Routes 和 WebOb 搭建的一套Web框架
+
+简介
+----
+基于 WebOb, PasteDeploy 搭建的 Web 框架
+
+运行
+----
