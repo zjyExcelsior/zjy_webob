@@ -2,6 +2,7 @@
 import zjy_webob
 from zjy_webob.wsgi import Application
 
+
 class VersionController(Application):
 
     def _get_url(self, req, version):

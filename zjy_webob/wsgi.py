@@ -12,6 +12,7 @@ from zjy_webob import exception
 
 logger = logging.getLogger(__name__)
 
+
 class Application(object):
 
     @classmethod
