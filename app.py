@@ -1,13 +1,12 @@
 # coding=utf-8
 import os
+import wsgiref.simple_server as wss
 
 from paste.deploy import loadapp
 
-import logging
-logging.basicConfig(level=logging.DEBUG)
-
-project_root_dir = '/Users/zhujiongyao/zjy_tests/zjy_webob'  # 项目的根目录
+project_root_dir = os.path.abspath(os.path.dirname(__file__))  # 项目的根目录
 config_dir = os.path.join(project_root_dir, 'configs')  # 配置文件目录
+
 
 def app():
     paste_config_path = os.path.join(config_dir, 'paste.ini')
@@ -16,8 +15,6 @@ def app():
 
 
 if __name__ == '__main__':
-    import wsgiref.simple_server as wss
-
     port = 18877
     server = wss.make_server('', port, app())
 
